@@ -1,6 +1,6 @@
 # SocialNetwork
 
-Data Format:
+## Data Format:
 
 douban_train.txt and douban_test.txt:
 
@@ -26,6 +26,9 @@ userid dimension1 dimension2 ... dimension128
 \\
 \\
 
-Evaluation:
+## Evaluation:
 
 Rooted Mean Square Error(RMSE) and Mean Avarage Error(MAE).
+
+## 社交网络的可视化：
+见social_visual中，graph-npm.html文件，记得将三个.js文件放到同一文件夹下。
