@@ -2,10 +2,15 @@
 <html style="height: 100%">
    <head>
        <meta charset="utf-8">
+       <title>ECharts</title>
+       <!-- 引入 echarts.js -->
+       <script src="echarts.js"></script>
+       <!-- <script src="config.js"></script> -->
+       <script src="jquery.min.js"></script>
    </head>
    <body style="height: 100%; margin: 0">
        <div id="container" style="height: 100%"></div>
-       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+       <!-- <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
@@ -13,18 +18,22 @@
        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
        <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
-       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script> -->
+       <script src="jquery.min.js"></script>
+       <script src="config.js"></script>
        <script type="text/javascript">
 var dom = document.getElementById("container");
-var myChart = echarts.init(dom);
+var myChart = echarts.init(dom,'dark');
+// var myChart = echarts.init(document.getElementById('main'));
 var app = {};
 option = null;
 myChart.showLoading();
-$.getJSON('https://raw.githubusercontent.com/LibertFan/SocialNetwork/master/social_visual/douban_user.json?token=AQtoz9Ckuh4Gvagc8JoHOSTPmAiIUsq7ks5cG06iwA%3D%3D', function (json) {
+$.getJSON('douban_user.json', function (json){
+// $.getJSON('https://raw.githubusercontent.com/LibertFan/SocialNetwork/master/social_visual/douban_user.json?token=AQtoz9Ckuh4Gvagc8JoHOSTPmAiIUsq7ks5cG06iwA%3D%3D', function (json) {
     myChart.hideLoading();
     myChart.setOption(option = {
         title: {
-            text: 'NPM Dependencies'
+            text: 'Douban User Relation Network'
         },
         animationDurationUpdate: 1500,
         animationEasingUpdate: 'quinticInOut',
@@ -71,7 +80,7 @@ $.getJSON('https://raw.githubusercontent.com/LibertFan/SocialNetwork/master/soci
             }
         ]
     }, true);
-});;
+});
 if (option && typeof option === "object") {
     myChart.setOption(option, true);
 }
