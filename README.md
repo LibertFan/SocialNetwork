@@ -33,3 +33,16 @@ Rooted Mean Square Error(RMSE) and Mean Avarage Error(MAE).
 ## 社交网络的可视化：
 见social_visual中，graph-npm.html文件，效果如下图，记得将三个.js文件放到同一文件夹下。
 ![](/social_visual/visualization.png)
+
+## Baseline recommendation model结果
+
+| models | MAE | RMSE |
+| ------ | ------ | ------ |
+|MostPopular |1.564 | 1.849|
+|pmf |0.650 | 0.848|
+|socialmf | 0.639 | 0.809|
+|sorec |  0.640 | 0.810|
+|soreg | 0.733| 0.961|
+|trustmf | 0.718 |  0.912|
+|trustsvd |  0.858 | 1.146|
+|AutoRec| 暂且有问题|
