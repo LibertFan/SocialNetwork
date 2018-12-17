@@ -45,4 +45,4 @@ Rooted Mean Square Error(RMSE) and Mean Avarage Error(MAE).
 |soreg | 0.733| 0.961|
 |trustmf | 0.718 |  0.912|
 |trustsvd |  0.858 | 1.146|
-|AutoRec| 暂且有问题|
+|AutoRec| 需要基于deeplearning4j这个java包，暂且有问题|
