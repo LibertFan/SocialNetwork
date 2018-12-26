@@ -46,4 +46,5 @@ Rooted Mean Square Error(RMSE) and Mean Avarage Error(MAE).
 |trustmf | 0.718 |  0.912|
 |trustsvd |  0.858 | 1.146|
 |AutoRec| 0.645|0.826|
-|SocialAutoRecNorm| 0.617|0.796|
+|SocialAutoRec|-|-|
+|SocialAutoRecNorm|0.617|0.796|
