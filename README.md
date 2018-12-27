@@ -15,7 +15,7 @@ follower /t followee
 
 (follower:关注者，followee:被关注者)
 
-douban_emb(叶蓉你不用管这个数据):
+douban_emb:
 
 first line: number of users, embedding dimensions
 
@@ -45,4 +45,6 @@ Rooted Mean Square Error(RMSE) and Mean Avarage Error(MAE).
 |soreg | 0.733| 0.961|
 |trustmf | 0.718 |  0.912|
 |trustsvd |  0.858 | 1.146|
-|AutoRec| 需要基于deeplearning4j这个java包，暂且有问题|
+|AutoRec| 0.645|0.826|
+|SocialAutoRec|0.635|0.814|
+|SocialAutoRec-ClusterReg|0.617|0.796|
