@@ -15,7 +15,7 @@ follower /t followee
 
 (follower:关注者，followee:被关注者)
 
-douban_emb(叶蓉你不用管这个数据):
+douban_emb:
 
 first line: number of users, embedding dimensions
 
