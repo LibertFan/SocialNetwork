@@ -1,5 +1,9 @@
 # SocialNetwork
 
+## SocialAutoRec:
+See ./AeREC
+
+
 ## Data Format:
 
 douban_train.txt and douban_test.txt:
