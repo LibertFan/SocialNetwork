@@ -1,7 +1,7 @@
 # SocialNetwork
 
 ## SocialAutoRec:
-See ./AeREC
+See ./AERec
 
 
 ## Data Format:
